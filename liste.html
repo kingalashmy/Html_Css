@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="list.css"> 
+    <title>Document</title>
+</head>
+<!-- 
+<style>
+
+
+    .list {
+        border: solid 5px red ;
+        margin: 5%;
+    }
+    body{
+        color: black;
+    }
+ /* Styles pour les éléments de la liste "son" */
+.parent{
+    list-style-type:upper-roman ;
+    counter-increment:  parent-counter ; 
+
+}
+ .son {
+
+    list-style-type: none;
+    /* list-style:inherit  ; Désactivez les puces par défaut */
+ 
+}
+
+.son > li {
+    counter-increment: son-counter; 
+    ;
+}
+
+
+.son > li:before {
+    content:   counter(parent-counter,upper-roman ) 'I' '.' counter(son-counter) '. ';
+ 
+
+/* Style de texte pour les éléments de la liste "son" */
+}
+ .parent_2{
+    list-style-type: none ;
+
+}
+.parent_2>li{
+    counter-increment: parent_2-counter;
+
+   
+}
+.parent_2>li::before{
+    content:"III" ' . 'counter(parent_2-counter )  '. '   ;
+    width: 2em ;
+    /* content : counter(parent_2-counter , upper-roman) 'II' '.' parent-counter '.' ; */
+}
+
+.son_1{
+    list-style-type: none ;
+
+}
+.son_1>li{
+    counter-increment: son_1-counter ;
+}
+.son_1>li::before{
+    content:'I .' counter(son_1-counter) ' . ';
+}
+
+.son_parent{
+    list-style-type: none ;
+}
+.son_parent>li{
+    counter-increment: son_parent-counter ;
+}
+.son_parent>li::before{
+    content:'II . 2 ' ' .' counter(son_parent-counter ) " . "; /*cette code mois un condition pour ajauter la lowercase appres les II . 2 */
+}
+
+#blue{
+    content: "l ";
+
+    background-color: blue ;
+    position: relative;
+  
+    
+}
+ #s_blue{
+    background-color: rgb(193, 131, 251);
+    width: 70%;
+    color: white;
+}
+#black{
+    background-color: black ;
+    width: 40%;
+    color: white;
+}
+h4{
+    text-align: center;
+    margin-top: 50px ;
+}
+</style> -->
+
+<body>
+    <H4>Exercice liste HTML / CSS </h4>
+    <div class="list">
+    <ul class="parent">
+        <li id="blue">parent 1 </li>
+        <ul class="son_1">
+            <li id="s_blue">son 1 </li>
+            <li >son parent 1</li>
+            <ul class="son_parent">
+                <li id="black">a - grandson 1</li>
+                <li>b - grandson 1 </li>
+                <li>c - grandson 1 </li>
+                <li id="black">b - grandson 1 </li>
+            </ul>
+            <li id="s_blue">son 1</li>
+        </ul>
+        <li>parent title 2 </li>
+            <ol class="son">
+                <li id="s_blue">son 1 </li>
+                <li>son parent 2
+                    <ul class="son_parent">
+                        <li id="black">a - grandson 1</li>
+                        <li>b - grandson 1 </li>
+                        <li>c - grandson 1 </li>
+                        <li id="black">b - grandson 1 </li>
+                    </ul>
+                </li>
+                <li id="s_blue">son 3</li>
+            </ol>
+     
+     
+            <li id="blue">parent fin  3 : 
+          <!--
+          
+          <ul class="parent_2">
+              <li>alhamed</li>
+              <li>mohammed</li>
+              <li>salem </li>
+              <li>ali</li>
+            </ul>
+        </li>
+    -->
+
+        
+    </ul>
+</div>
+</body>
+<script type="text\javascript" src="monscript.js"></script>
+</html>

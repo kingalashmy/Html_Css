@@ -1,0 +1,88 @@
+/* .princible{ */
+    /* margin-bottom: 00px ; */
+/* } */
+iframe{
+    width: 80%;
+    height: 80%;
+}
+
+
+table{
+    border: 1px solid white;
+    width: 100%;
+}
+
+
+.header{
+    background-color:#9f9572;
+    
+}
+
+.lin1{
+    background-color: rgb(209, 180, 137);
+}
+
+/* ming page  */
+
+
+.table {
+    width: 70%; /* Définissez la largeur de la div "table". */
+    float: left; /* Alignez-la à gauche. */
+}
+
+.miniPage {
+    width: 25%; /* Définissez la largeur de la div "miniPage". */
+    float: left; /* Alignez-la à gauche. */
+    position: relative;
+    margin-top: 20%;
+}
+.table {
+    width: 70%;
+    float: left;
+    /* position: relative; Ajoutez la position relative à la div "table". */
+    margin-left: 63px ;
+    margin-top: 20px;
+}
+
+
+ul{
+    margin-top: 100px;
+    visibility: visible;
+}
+.english {
+    /* Utilisez une couleur semi-transparente pour l'arrière-plan. */
+    background-color: rgba(159, 149, 114, 0.7);
+    text-align: right;
+    border-radius: 10% 0% 0% 0%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 94%;
+    margin-top: 5px;
+    margin-left: 72px;
+}
+.border-red{
+    border: 3px red solid ;
+}
+#large-red{
+    font-size:larger;
+    color: red ;
+}
+
+.lettre{
+    color: red;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font: larger;
+   
+}
+
+.change-color:active{
+    color: red;
+}
+ .change-color:hover{
+    /* cursor: pointer; */
+    color: #171614;
+}
+:target{
+    color:red ; 
+}

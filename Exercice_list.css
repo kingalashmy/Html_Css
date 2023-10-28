@@ -1,0 +1,40 @@
+ 
+body{
+    background-color: rgb(192, 59, 59);
+}
+ul{
+    color: white;
+}
+.parent {
+    list-style-type:upper-roman;
+}
+
+ .son {
+    list-style-type:  ;
+}
+.son> li {
+    counter-increment: section ;
+} 
+.son > li  ::before{
+    content: ' - ' counter(section) '   ' ;
+}
+
+.grandson{
+    list-style-type: non ;
+}
+
+ ul .blue{
+    background-color: blue;
+    display: block; 
+}
+
+ul .black{
+    background-color: black;
+    width: 50%;
+    
+}
+ul .s_blue{
+    background-color: rgb(173, 85, 255);
+    width: 80%;
+}  
+

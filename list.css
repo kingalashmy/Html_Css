@@ -1,0 +1,93 @@
+
+
+
+    .list {
+        border: solid 5px red ;
+        margin: 5%;
+    }
+    body{
+        color: black;
+    }
+ /* Styles pour les éléments de la liste "son" */
+.parent{
+    list-style-type:upper-roman ;
+    counter-increment:  parent-counter ; 
+
+}
+ .son {
+
+    list-style-type: none;
+    /* list-style:inherit  ; Désactivez les puces par défaut */
+ 
+}
+
+.son > li {
+    counter-increment: son-counter; 
+    ;
+}
+
+
+.son > li:before {
+    content:   counter(parent-counter,upper-roman ) 'I' '.' counter(son-counter) '. ';
+ 
+
+/* Style de texte pour les éléments de la liste "son" */
+}
+ .parent_2{
+    list-style-type: none ;
+
+}
+.parent_2>li{
+    counter-increment: parent_2-counter;
+
+   
+}
+.parent_2>li::before{
+    content:"III" ' . 'counter(parent_2-counter )  '. '   ;
+    width: 2em ;
+    /* content : counter(parent_2-counter , upper-roman) 'II' '.' parent-counter '.' ; */
+}
+
+.son_1{
+    list-style-type: none ;
+
+}
+.son_1>li{
+    counter-increment: son_1-counter ;
+}
+.son_1>li::before{
+    content:'I .' counter(son_1-counter) ' . ';
+}
+
+.son_parent{
+    list-style-type: none ;
+}
+.son_parent>li{
+    counter-increment: son_parent-counter ;
+}
+.son_parent>li::before{
+    content:'II . 2 ' ' .' counter(son_parent-counter ) " . "; /*cette code mois un condition pour ajauter la lowercase appres les II . 2 */
+}
+
+#blue{
+    content: "l ";
+
+    background-color: blue ;
+    position: relative;
+  
+    
+}
+ #s_blue{
+    background-color: rgb(193, 131, 251);
+    width: 70%;
+    color: white;
+}
+#black{
+    background-color: black ;
+    width: 40%;
+    color: white;
+}
+h4{
+    text-align: center;
+    margin-top: 50px ;
+}
